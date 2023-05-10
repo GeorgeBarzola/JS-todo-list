@@ -1,0 +1,66 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(251, 255, 0);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(120, 4, 110);
+  font-size: 44px;
+
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#taskInput {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+#addButton {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 25px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.task:hover {
+  background-color: #e0e0e0;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task .delete-btn {
+  margin-left: auto;
+  color: #ff0000;
+  cursor: pointer;
+}
